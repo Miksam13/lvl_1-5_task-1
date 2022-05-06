@@ -1,0 +1,7 @@
+{
+  "files": ["src/main.ts", "src/moment.min.js"],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es2015"
+  }
+}

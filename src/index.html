@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p {
+        font-family: "Balsamiq Sans", cursive;
+      }
+      .title_timer {
+        color: #000;
+        font-size: 100px;
+        text-align: center;
+      }
+      #all_timer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        display: block;
+      }
+      .txt_timer {
+        font-size: 24px;
+        text-align: center;
+      }
+      .select_time {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .btn_regul {
+        width: 50px;
+        height: 50px;
+        font-size: 36px;
+        background-color: rgba(00, 00, 00, 00);
+        border: 3px solid #000;
+      }
+      #time {
+        margin-top: 5px;
+        font-size: 40px;
+      }
+      #btn_start {
+        background-color: green;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: 35px;
+        font-size: 24px;
+        font-family: "Balsamiq Sans", cursive;
+        border: 3px solid #000;
+      }
+      #timer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        display: none;
+      }
+      .txt_time_end {
+        font-size: 24px;
+        text-align: center;
+      }
+      #time_end {
+        margin-top: 5px;
+        font-size: 40px;
+        text-align: center;
+      }
+    </style>
+    <title>Timer</title>
+  </head>
+  <body>
+    <p class="title_timer">Timer</p>
+    <div id="all_timer">
+      <p class="txt_timer">Укажите время в минутах</p>
+      <div class="select_time">
+        <button id="btn_plus" class="btn_regul">+</button>
+        <p id="time">5</p>
+        <button id="btn_minus" class="btn_regul">-</button>
+      </div>
+      <button id="btn_start">Start</button>
+    </div>
+    <div id="timer">
+      <p class="txt_time_end">Осталось</p>
+      <p id="time_end"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>
