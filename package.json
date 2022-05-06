@@ -6,7 +6,7 @@
   "scripts": {
     "start": " start gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "lint:fix": "eslint ./src --fix"
   },
   "author": "",
   "license": "ISC",
@@ -51,6 +51,9 @@
     }  
   },
   "lint-staged": {    
-    "*.(js|jsx)": ["npm run lint:write", "git add"]  
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]  
   }
 }
